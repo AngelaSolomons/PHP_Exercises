@@ -21,23 +21,23 @@ echo "<br>";
 echo "<br>";
 
 
-// Write a script to calculate BMI given height (in meters) and weight (in kilograms). Print the result
+// Write a script to calculate BMI given height (in meters) and weight (in kilograms). Print the result in the format: "Your BMI is: 22.3 (Normal weight)."
 echo "<h4>BMI Calculator</h4>";
 $height = 1.75;
-$weight = 85;
-$bmi = $weight / ($height * 2);
+$weight = 97;
+$bmi = $weight / ($height ** 2);
 
 if ($bmi < 18.5) {
-    echo "Your BMI is: " . (round($bmi)) . " (Underweight).";
+    echo "Your BMI is: " . (round($bmi, 1)) . " (Underweight).";
 }
-elseif ($bmi < 25) {
-    echo "Your BMI is: " . (round($bmi)) . " (Normal weight).";
+elseif ($bmi > 18.5 && $bmi < 24.9) {
+    echo "Your BMI is: " . (round($bmi, 1)) . " (Normal weight).";
 }
-elseif ($bmi < 30) {
-    echo "Your BMI is: " . (round($bmi)) . " (Overweight).";
+elseif ($bmi > 25.0 && $bmi < 29.9) {
+    echo "Your BMI is: " . (round($bmi, 1)) . " (Overweight).";
 }
 else {
-    echo "Your BMI is: " . (round($bmi)) . " (Obese).";
+    echo "Your BMI is: " . (round($bmi, 1)) . " (Obese).";
 }
 echo "<br>";
 echo "<br>";
