@@ -47,18 +47,55 @@ echo "<br>";
 
 // Simple Interest Calculator
 $principalAmount = 10000;
-$rate = 5;
+$rate = 0.05;
 $time = 3;
 
 $interest = $principalAmount * $rate * $time;
+$totalAmount = $principalAmount + $interest;
 
+echo "Interest: R" . $interest;
+echo "<br>";
+echo "Total Amount: R" . $totalAmount;
 
 
 // Logical Operator Practice
+$age = 25;
+$registeredToVote = true;
+
+if ($age >= 18 && $age <= 35 && $registeredToVote) {
+    echo "Eligible to vote.";
+}
+else {
+    echo "Not eligible to vote.";
+}
+
+echo "<br><br>";
+
 
 
 // Dynamic Discount
+$purchaseAmount = 750;
+$discount = 0;
 
+if ($purchaseAmount > 1000) {
+    $discount = 0.10;
+}
+elseif ($purchaseAmount >= 500) {
+    $discount = 0.05;
+}
+elseif ($purchaseAmount >= 250) {
+    $discount = 0.02;
+}
+else {
+    $discount = 0;
+}
+
+$discountAmount = $purchaseAmount * $discount;
+$finalPrice = $purchaseAmount - $discountAmount;
+
+echo "Purchase Amount: R" . $purchaseAmount . "<br>";
+echo "Discount Amount: R" . $discountAmount . "<br>";
+echo "Final Price: R" . $finalPrice;
 ?>
 
 </body>
