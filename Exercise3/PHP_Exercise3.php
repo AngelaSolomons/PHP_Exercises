@@ -56,7 +56,7 @@ $totalAmount = $principalAmount + $interest;
 echo "Interest: R" . $interest;
 echo "<br>";
 echo "Total Amount: R" . $totalAmount;
-
+echo "<br>";
 
 // Logical Operator Practice
 $age = 25;
